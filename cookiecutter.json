@@ -1,4 +1,5 @@
 {
+    "project_name": "{{ project_name }}",
     "project_slug": "{{ cookiecutter.project_name.lower().replace(' ', '_').replace('-', '_') }}",
     "version": "0.1.0",
     "create_author_file": "y",
