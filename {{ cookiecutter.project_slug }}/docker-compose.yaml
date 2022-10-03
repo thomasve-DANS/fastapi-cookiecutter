@@ -1,0 +1,8 @@
+services:
+  application:
+    container_name: ${CONTAINER_NAME}
+    command: CMD ["uvicorn", "app.main:app", "--proxy-headers", "--host", "0.0.0.0", "--port", "${PORT}"]
+    volumes:
+      - "./app:/app"
+    ports:
+      - "${PORT}:${PORT}"
