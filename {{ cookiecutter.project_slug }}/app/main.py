@@ -1,9 +1,7 @@
+from fastapi import FastAPI
 
+app = FastAPI()
 
-
-def main():
-    return "Magic begins here"
-
-
-if __name__ == "__main__":
-    main()
+@app.get("/")
+def read_root():
+    return {"Magic": "Begins here"}

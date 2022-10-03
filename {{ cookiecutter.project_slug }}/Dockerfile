@@ -10,4 +10,6 @@ RUN poetry config virtualenvs.create false
 
 RUN poetry install
 
-EXPOSE {{cookiecutter.port}} 
+EXPOSE {{cookiecutter.port}}
+
+RUN pip install uvicorn
