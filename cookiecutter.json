@@ -3,6 +3,8 @@
     "project_slug": "{{ cookiecutter.project_name.lower().replace(' ', '_').replace('-', '_') }}",
     "version": "0.1.0",
     "create_author_file": "y",
+    "author": "fill-in-your-stuff",
+    "author_email": "youremail@dans.knaw.nl",
     "open_source_license": [
         "MIT license",
         "BSD license",
@@ -12,5 +14,6 @@
         "Not open source"
     ],
     "port": 8080,
-    "container_name": "fastapi-service"
+    "container_name": "fastapi-service",
+    "application_folder_name": "src"
 }

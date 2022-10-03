@@ -1,6 +1,6 @@
 FROM python:3.9-slim
 
-WORKDIR app
+WORKDIR {{cookiecutter.application_folder_name}}
 
 RUN pip install poetry
 
