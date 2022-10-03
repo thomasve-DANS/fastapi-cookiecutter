@@ -11,6 +11,6 @@
         "GNU General Public License v3",
         "Not open source"
     ],
-    "port": "8080",
-    "container name": "fastapi-service"
+    "port": 8080,
+    "container_name": "fastapi-service"
 }
