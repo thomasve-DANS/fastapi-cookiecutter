@@ -1,6 +1,6 @@
 # Cookiecutter for FastAPI Docker container
 
-A simple cookiecutter to allow for fast development of FastAPI based containers.
+A simple cookiecutter to allow for fast development of FastAPI based containers. FastAPI documentation: https://fastapi.tiangolo.com/
 
 # How to use
 
