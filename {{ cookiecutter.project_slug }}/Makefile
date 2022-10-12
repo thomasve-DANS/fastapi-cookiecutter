@@ -17,6 +17,8 @@ startbg: ## Start project running in detached mode - background.
 	@docker-compose up -d
 stop: ## Stop the running project.
 	@docker-compose stop
+test:
+	@docker exec -it ${CONTAINER_NAME} pytest
 copy-poetry-files: ## Copies poetry files inside container
 	@docker cp ./pyproject.toml ${PROJECT_CONTAINER_NAME}:/pyproject.toml
 	@docker exec -it ${CONTAINER_NAME} poetry update

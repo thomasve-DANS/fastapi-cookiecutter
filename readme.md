@@ -14,3 +14,7 @@ To make your project:
 - Add dependencies to container using Makefile
 - Perform your function in `main.py` file.
 - Enjoy as your stuff builds to a Docker file on pipeline.
+
+# Testing
+
+Testing can be done with Pytest; requests is also installed.
