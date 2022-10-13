@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "fastapi-docker-cookiecutter"
+name = "{{ cookiecutter.project_slug }}"
 version = "0.1.0"
 description = "A project allowing one to set up a FastAPI based Microservice, using cookiecutter"
 authors = ["Thomas van Erven"]

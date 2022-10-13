@@ -1,15 +1,17 @@
 FROM python:3.9-slim
 
-WORKDIR {{cookiecutter.application_folder_name}}
+ENV PYTHONDONTWRITEBYTECODE 1
+ENV PYTHONUNBUFFERED 1
 
-RUN pip install poetry
-
+WORKDIR root
 COPY pyproject.toml .
-
+RUN pip install poetry
 RUN poetry config virtualenvs.create false
-
 RUN poetry install
 
-EXPOSE {{cookiecutter.port}}
+WORKDIR {{cookiecutter.application_folder_name}}
+COPY {{cookiecutter.application_folder_name}}/ .
+COPY pyproject.toml ./stub.toml
 
+EXPOSE 7070
 RUN pip install uvicorn
