@@ -1,3 +1,11 @@
+# This pipeline is responsible for running Pytest to check your image, as well as building your docker Image.
+# To run:
+# - Rename the file to docker-image.yml
+# - Add 2 secrets to the Github secrets of your repo:
+# 1. Your Docker hub username as DOCKER_HUB_USERNAME
+# 2. Your Docker hub access token DOCKER_HUB_ACCESS_PASSWORD
+# Then commit.
+
 name: Docker Image CI
 
 on:
