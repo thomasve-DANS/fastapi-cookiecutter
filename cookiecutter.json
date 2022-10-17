@@ -15,5 +15,7 @@
     ],
     "port": 8080,
     "container_name": "fastapi-service",
-    "application_folder_name": "src"
+    "application_folder_name": "src",
+    "docker_user": "username",
+    "docker_repo": "yourrepo"
 }
