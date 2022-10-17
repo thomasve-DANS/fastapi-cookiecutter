@@ -18,3 +18,7 @@ To make your project:
 # Testing
 
 Testing can be done with Pytest; requests is also installed.
+
+# Pipeline
+
+A pipeline is included, disabled by default. Instructions for enabling this are in the pipeline file; this runs Pytest to cover your test cases and builds into a Docker image.
